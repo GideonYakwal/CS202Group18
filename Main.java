@@ -109,8 +109,6 @@ class Cube extends Shape {
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
-        // Ask user to select a shape
         System.out.println("Select a shape:");
         System.out.println("1. Triangle");
         System.out.println("2. Circle");
@@ -121,7 +119,7 @@ public class Main {
         
         double area, volume;
         
-        // Depending on the user's choice, ask for properties and calculate area and volume
+        
         switch (choice) {
             case 1:
                 System.out.print("Enter base length of triangle: ");
@@ -171,5 +169,6 @@ public class Main {
         if (choice >= 4) {
             System.out.println("Volume: " + volume);
         }
+        scanner.close();
     }
 }
